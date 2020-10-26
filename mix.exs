@@ -1,9 +1,9 @@
-defmodule CommonsPub.Acls.MixProject do
+defmodule CommonsPub.Access.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :cpub_acls,
+      app: :cpub_access,
       version: "0.1.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
@@ -18,7 +18,7 @@ defmodule CommonsPub.Acls.MixProject do
         },
       ],
       docs: [
-        main: "readme", # The first page to display from the docs 
+        main: "readme", # The first page to display from the docs
         extras: ["README.md"], # extra pages to include
       ],
       deps: deps()
